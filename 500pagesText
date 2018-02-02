@@ -10,7 +10,7 @@
 ## ~/.config/daps/dapsrc
 
 ## Mandatory Parameter
-MAIN="500pagesText.xml"
+MAIN="500pagesTables.xml"
 
 ##--------------------
 ## Optional Parameters

@@ -1,1 +1,3 @@
-Fri Feb  2 19:33:31 UTC 2018
+Fri Feb  2 23:04:51 UTC 2018
+/usr/share/daps/make/pdf.mk:174: recipe for target '/dockerShare/build/500pagesText/500pagesText_color_de.pdf' failed
+make: *** [/dockerShare/build/500pagesText/500pagesText_color_de.pdf] Error 1
