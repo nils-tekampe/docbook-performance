@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbook.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="de">
+    <title>My First Book</title>
+
+    <xi:include  href="includeText100pages.xml"/>
+    <xi:include  href="includeText100pages2.xml"/>
+    <xi:include  href="includeText100pages3.xml"/>
+    <xi:include  href="includeText100pages4.xml"/>
+    <xi:include  href="includeText100pages5.xml"/>
+    <xi:include  href="includeText100pages6.xml"/>
+    <xi:include  href="includeText100pages7.xml"/>
+    <xi:include  href="includeText100pages8.xml"/>
+    <xi:include  href="includeText100pages9.xml"/>
+    <xi:include  href="includeText100pages10.xml"/>
+
+    </book>
+

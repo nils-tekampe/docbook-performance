@@ -1,0 +1,60 @@
+Sat Feb  3 11:23:44 UTC 2018
+GNU Make 4.0
+Built for x86_64-unknown-linux-gnu
+Copyright (C) 1988-2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Updating goal targets....
+ File 'pdf' does not exist.
+     File '/dockerShare/build/.tmp/100pagesText-fop_color_de.fo' does not exist.
+       File '/dockerShare/build/.profiled/noprofile/100pagesText.xml' does not exist.
+         File '/dockerShare/build/.profiled/noprofile' does not exist.
+        Must remake target '/dockerShare/build/.profiled/noprofile'.
+mkdir -p /dockerShare/build/.profiled/noprofile
+        Successfully remade target file '/dockerShare/build/.profiled/noprofile'.
+      Must remake target '/dockerShare/build/.profiled/noprofile/100pagesText.xml'.
+/usr/share/daps/libexec/daps-xslt --output /dockerShare/build/.profiled/noprofile/100pagesText.xml   \
+  --stringparam "filename=100pagesText.xml" \
+  --stylesheet /usr/share/daps/daps-xslt/profiling/noprofile5.xsl --file /dockerShare/xml/100pagesText.xml /usr/bin/xsltproc
+      Successfully remade target file '/dockerShare/build/.profiled/noprofile/100pagesText.xml'.
+       File '/dockerShare/build/.profiled/noprofile/includeText100pages.xml' does not exist.
+      Must remake target '/dockerShare/build/.profiled/noprofile/includeText100pages.xml'.
+/usr/share/daps/libexec/daps-xslt --output /dockerShare/build/.profiled/noprofile/includeText100pages.xml   \
+  --stringparam "filename=includeText100pages.xml" \
+  --stylesheet /usr/share/daps/daps-xslt/profiling/noprofile5.xsl --file /dockerShare/xml/includeText100pages.xml /usr/bin/xsltproc
+      Successfully remade target file '/dockerShare/build/.profiled/noprofile/includeText100pages.xml'.
+       File '/dockerShare/build/.profiled/noprofile/.validate' does not exist.
+      Must remake target '/dockerShare/build/.profiled/noprofile/.validate'.
+/usr/share/daps/libexec/daps-jing  /usr/share/xml/docbook/schema/rng/5.1/docbookxi.rng /dockerShare/build/.profiled/noprofile/100pagesText.xml
+Picked up _JAVA_OPTIONS: -Xmx4g
+touch /dockerShare/build/.profiled/noprofile/.validate
+      Successfully remade target file '/dockerShare/build/.profiled/noprofile/.validate'.
+       File '/dockerShare/build/.tmp' does not exist.
+      Must remake target '/dockerShare/build/.tmp'.
+mkdir -p /dockerShare/build/.tmp
+      Successfully remade target file '/dockerShare/build/.tmp'.
+    Must remake target '/dockerShare/build/.tmp/100pagesText-fop_color_de.fo'.
+/usr/share/daps/libexec/daps-xslt --xinclude --param "show.comments=0" --param "generate.permalink=0" --param "ulink.show=1" --stringparam "draft.mode=no" --stringparam "styleroot=/usr/share/xml/docbook/stylesheet/nwalsh5/1.78.1/" --param "format.print=0" --stringparam "img.src.path=/dockerShare/build/.images/color/" --param "fop1.extensions=1" --param "xep.extensions=0"   \
+    --stringparam "converter.name=DAPS" --stringparam "converter.version=2.4.0"   \
+   --output /dockerShare/build/.tmp/100pagesText-fop_color_de.fo --stylesheet /usr/share/xml/docbook/stylesheet/nwalsh5/1.78.1/fo/docbook.xsl \
+  --file /dockerShare/build/.profiled/noprofile/100pagesText.xml /usr/bin/xsltproc  
+Making portrait pages on USletter paper (8.5inx11in)
+(cd /dockerShare/build/.tmp; ln -sf /usr/share/xml/docbook/stylesheet/nwalsh5/1.78.1/images)
+    Successfully remade target file '/dockerShare/build/.tmp/100pagesText-fop_color_de.fo'.
+   Prerequisite '/dockerShare/build/.tmp/100pagesText-fop_color_de.fo' is newer than target '/dockerShare/build/100pagesText/100pagesText_color_de.pdf'.
+  Must remake target '/dockerShare/build/100pagesText/100pagesText_color_de.pdf'.
+(cd /dockerShare/build/.tmp/ && /usr/share/daps/libexec/daps-fop  /dockerShare/build/.tmp/100pagesText-fop_color_de.fo /dockerShare/build/100pagesText/100pagesText_color_de.pdf  )
+Picked up _JAVA_OPTIONS: -Xmx4g
+  Successfully remade target file '/dockerShare/build/100pagesText/100pagesText_color_de.pdf'.
+   File 'list-images-multisrc' does not exist.
+  Must remake target 'list-images-multisrc'.
+  Successfully remade target file 'list-images-multisrc'.
+   File 'list-images-missing' does not exist.
+  Must remake target 'list-images-missing'.
+  Successfully remade target file 'list-images-missing'.
+Must remake target 'pdf'.
+[32mPDF book built with REMARKS=0, DRAFT=no and META=0:[0m
+[32m/dockerShare/build/100pagesText/100pagesText_color_de.pdf[0m
+Successfully remade target file 'pdf'.

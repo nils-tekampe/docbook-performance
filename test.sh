@@ -1,4 +1,4 @@
-declare -a testcases=("500pagesText" "1000pagesText" "500pagesTables")
+declare -a testcases=("100pagesText" "500pagesText" "1000pagesText" "500pagesTables" "100pagesText10Times")
 
 for i in "${testcases[@]}"
 do
